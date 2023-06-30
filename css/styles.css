@@ -1,0 +1,64 @@
+
+body.dark {
+  --background: #15202b;
+  --font: #fff;
+
+  background-color: var(--background);
+  color: var(--font);
+}
+
+a {
+  color: var(--main);
+}
+
+.btn-large,
+.btn-large:hover,
+.btn-large:focus {
+  background-color: var(--main);
+}
+
+.sidenav {
+  padding: 0 1rem;
+  background-color: var(--background);
+}
+.sidenav .switch {
+  margin: 2rem 0 1rem;
+}
+.sidenav span.lever {
+  margin-bottom: 15px;
+}
+.sidenav #theme-switcher:checked + span.lever {
+  background-color: rgba(0, 0, 0, 0.38);
+}
+.sidenav #theme-switcher:checked + span.lever::after {
+  background-color: var(--main);
+}
+
+.color {
+  width: 50px;
+  height: 50px;
+  margin: 0.25rem auto;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col:nth-child(1) .color {
+  background-color: var(--blue);
+}
+.col:nth-child(2) .color {
+  background-color: var(--yellow);
+}
+.col:nth-child(3) .color {
+  background-color: var(--pink);
+}
+.col:nth-child(4) .color {
+  background-color: var(--purple);
+}
+.col:nth-child(5) .color {
+  background-color: var(--orange);
+}
+.col:nth-child(6) .color {
+  background-color: var(--green);
+}
